@@ -6,7 +6,7 @@ import (
 )
 
 func TestGetFibonacciUntil(t *testing.T) {
-	f := GetFibonacciUntil(10)
+	f := getFibonacciUntil(10)
 
 	assert.Equal(t, []int{1, 2, 3, 5, 8}, f)
 }

@@ -3,7 +3,7 @@
 To run solution:
 
 ```
-go run main.go prime.go
+go run main.go
 ```
 
 To run tests:

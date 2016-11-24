@@ -6,9 +6,9 @@ import (
 )
 
 func TestGetLargestPalindromeFromProductOf(t *testing.T) {
-	assert.Equal(t, 9009, GetLargestPalindromeFromProductOf(10, 99))
+	assert.Equal(t, 9009, getLargestPalindromeFromProductOf(10, 99))
 }
 
 func TestReverseInt(t *testing.T) {
-	assert.Equal(t, 321, ReverseInt(123))
+	assert.Equal(t, 321, reverseInt(123))
 }

@@ -6,5 +6,5 @@ import (
 )
 
 func TestGetLargestPrimeFactorFor(t *testing.T) {
-	assert.Equal(t, 29, GetLargestPrimeFactorFor(13195))
+	assert.Equal(t, 29, getLargestPrimeFactorFor(13195))
 }
