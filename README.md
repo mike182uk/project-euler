@@ -1,5 +1,7 @@
 # Project Euler
 
+![](https://projecteuler.net/profile/mike182uk.png)
+
 My solutions to [Project Euler](https://projecteuler.net/) problems.
 
 ## What is Project Euler?
