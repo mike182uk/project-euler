@@ -6,8 +6,8 @@ func main() {
 	fmt.Println(getPrimeAtIndex(10001))
 }
 
-func getPrimeAtIndex(n int) int {
-	c := 1
+func getPrimeAtIndex(x int) int {
+	cpi := 1
 	p := 2
 
 	for {
@@ -17,26 +17,26 @@ func getPrimeAtIndex(n int) int {
 			i++
 
 			if isPrime(i) {
-				p = i
-				c++
+				cpi = i
+				cpi++
 
 				break
 			}
 		}
 
-		if c == n {
+		if cpi == x {
 			return i
 		}
 	}
 }
 
-func isPrime(n int) bool {
-	if n == 2 {
+func isPrime(x int) bool {
+	if x == 2 {
 		return true
 	}
 
-	for i := 2; i < n; i++ {
-		if n%i == 0 {
+	for i := 2; i < x; i++ {
+		if x%i == 0 {
 			return false
 		}
 	}

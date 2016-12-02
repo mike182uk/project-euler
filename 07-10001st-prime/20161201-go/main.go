@@ -9,20 +9,20 @@ func main() {
 	fmt.Println(getPrimeAtIndex(10001))
 }
 
-func getPrimeAtIndex(n int) int {
+func getPrimeAtIndex(x int) int {
 	cpi := 1
 	i := 2
 
 	for {
 		i++
 
-		bi := big.NewInt(int64(i))
+		y := big.NewInt(int64(i))
 
-		if bi.ProbablyPrime(10) {
+		if y.ProbablyPrime(10) {
 			cpi++
 		}
 
-		if cpi == n {
+		if cpi == x {
 			return i
 		}
 	}

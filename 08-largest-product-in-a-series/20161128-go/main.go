@@ -11,21 +11,21 @@ func main() {
 	fmt.Println(findLargestProductInSeries(num, 13))
 }
 
-func findLargestProductInSeries(s string, n int) int {
+func findLargestProductInSeries(s string, seriesLen int) int {
 	lp := 0
 
-	for i := 0; i < len(s)-n-1; i++ {
-		a := s[i : i+n]
+	for i := 0; i < len(s)-seriesLen-1; i++ {
+		series := s[i : i+seriesLen]
 		sum := 1
 
-		for j := 0; j < len(a); j++ {
-			k, err := strconv.ParseInt(string(a[j]), 10, 32)
+		for j := 0; j < seriesLen; j++ {
+			v, err := strconv.ParseInt(string(series[j]), 10, 32)
 
 			if err != nil {
 				panic(err)
 			}
 
-			sum *= int(k)
+			sum *= int(v)
 		}
 
 		if sum > lp {

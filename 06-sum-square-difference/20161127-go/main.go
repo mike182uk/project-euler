@@ -6,20 +6,20 @@ func main() {
 	fmt.Println(getSquareOfSumUntil(100) - getSumOfSquareUntil(100))
 }
 
-func getSumOfSquareUntil(n int) int {
+func getSumOfSquareUntil(x int) int {
 	sum := 0
 
-	for i := 1; i <= n; i++ {
+	for i := 1; i <= x; i++ {
 		sum += i * i
 	}
 
 	return sum
 }
 
-func getSquareOfSumUntil(n int) int {
+func getSquareOfSumUntil(x int) int {
 	sum := 0
 
-	for i := 1; i <= n; i++ {
+	for i := 1; i <= x; i++ {
 		sum += i
 	}
 

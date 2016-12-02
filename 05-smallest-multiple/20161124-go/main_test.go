@@ -6,8 +6,8 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestGetLowestCommonMultiple(t *testing.T) {
-	assert.Equal(t, 12, getLowestCommonMultiple(2, 3, 4))
+func TestGetSmallestMultiple(t *testing.T) {
+	assert.Equal(t, 12, getSmallestMultiple(2, 3, 4))
 }
 
 func TestLCM(t *testing.T) {
